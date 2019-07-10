@@ -10,27 +10,52 @@
 </head>
 
 <body>
-
+    <!-- pie chart rounded progress bar -->
     <div class="container">
         <div class="box">
-            <div class="chart" data-percent="73">73</div>
+            <!-- ".chart" pie chart essential class -->
+            <div class="chart" data-percent="73">
+                <!-- ".counter" class counter essential class -->
+                <span class="counter">73</span>
+            </div>
         </div>
         <div class="box">
-            <div class="chart" data-percent="90">90</div>
+            <!-- chart pie chart essential class -->
+            <div class="chart" data-percent="90">
+                <!-- ".counter" class counter essential class -->
+                <span class="counter">90</span>
+            </div>
         </div>
         <div class="box">
-            <div class="chart" data-percent="42">42</div>
+            <!-- ".chart" pie chart essential class -->
+            <div class="chart" data-percent="42">
+                <!-- ".counter" class counter essential class -->
+                <span class="counter">42</span>
+            </div>
         </div>
         <div class="box">
-            <div class="chart" data-percent="65">65</div>
+            <!-- ".chart" pie chart essential class -->
+            <div class="chart" data-percent="65">
+                <!-- ".counter" class counter essential class -->
+                <span class="counter">65</span>
+            </div>
         </div>
     </div>
 
+    <!-- pie chart JS CDN link -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- counter and pie chart JS CDN link -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="jquery.easypiechart.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+
+    <!-- jQuery activation -->
     <script>
         $(function () {
+            // pie chart
             $('.chart').easyPieChart({
                 barColor: '#ef1e25',
                 trackColor: '#f2f2f2',
@@ -39,6 +64,12 @@
                 lineCap: 'round',
                 lineWidth: 15,
                 size: 150
+            });
+
+            // Counter JS
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
             });
         });
     </script>

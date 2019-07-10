@@ -1,20 +1,34 @@
+/* 
+
+    Project Name: Rounded Progress Bar with Counter JS
+    Author: atkhssn
+    Version: 1.0.0
+    Developer: Atik Hassan
+    GitHub: https://github.com/atkhssn
+
+*/
+
+/* default CSS */
 *{
     outline: 0;
     margin: 0;
     padding: 0;
 }
 
+/* full container CSS */
 .container{
     height: 100vh;
     background: rgb(14, 24, 18);
 }
 
+/* pie chart box CSS */
 .container .box{
     width: 25%;
     float: left;
     margin: 300px 0;
 }
 
+/* pie chart CSS */
 .container .box .chart{
     position: relative;
     width: 150px;
@@ -27,8 +41,11 @@
     font-weight: bold;
 }
 
+/* pie chart canvas CSS */
 .container .box canvas{
     position: absolute;
     top: 0;
     left: 0;
 }
+
+/* ++++++++++ THE END ++++++++++ */
