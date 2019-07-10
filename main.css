@@ -1,0 +1,34 @@
+*{
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    background: rgb(14, 24, 18);
+}
+
+.container .box{
+    width: 25%;
+    float: left;
+    margin: 300px 0;
+}
+
+.container .box .chart{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 150px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.container .box canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
